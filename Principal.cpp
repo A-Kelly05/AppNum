@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int op=0, num, numtabla;  
+    int op=0, num, numtabla,cantidad[MAX];  
     cout << "Opciones" << endl;
     cout << "1. Leer un numero y saber si es un numero primo.\n";
     cout << "2. Leer una lista de varios números ingresados por el estudiante y decir cuántos números son pares, impares y neutro\n.";
@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
         break;
          system("pause");
     case 3:
-        numMultiplo3(numtabla);
+        numMultiplo3(numtabla, cantidad);
         break;
          system("pause");
     

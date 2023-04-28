@@ -5,7 +5,7 @@ using namespace std;
 
 bool esPrimo (int num);
 int listaNum (int num);
-int numMultiplo3(int numtabla);
+int numMultiplo3(int num, int cantidad[MAX]);
 
 bool esPrimo(int num)
 {
@@ -39,19 +39,18 @@ int listaNum(int num)
  return 0;
 }
 
-int numMultiplo3(int numtabla)
+int numMultiplo3(int numtabla, int cantidad[MAX])
 {
  cout << "Dame un numero y yo te dare los proximos 10 multiplos 3" << endl;
  cout << "Dame un #: ";
  cin >> numtabla;
- for (int i = numtabla; i < MAX; i++)
+ for (int i = numtabla; i < cantidad[MAX]; i++)
  {
     if(i==3){
     cout << i << endl;
     i++;
     }
     else{
-    i++;
     i++;
     }
  }
